@@ -1,0 +1,3 @@
+[submodule "themes/htsea"]
+	path = themes/htsea
+	url = https://github.com/facingsea/htsea.git
