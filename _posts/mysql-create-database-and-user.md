@@ -38,3 +38,7 @@ mysql> select User, Host, Password from mysql.user;
 ```
 这里给用户分配了全部权限，具体权限可查询`mysql.user`表。
 
+## 修改密码
+```sql
+set PASSWORD FOR 'user_name'@'localhost' = PASSWORD('1234');
+```
