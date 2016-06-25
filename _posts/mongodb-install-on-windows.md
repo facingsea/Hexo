@@ -10,7 +10,7 @@ tags:
 
 ## 安装
 ### 下载
-MongoDB提供了.msi和.zip两种社区版下载，参见`https://www.mongodb.org/dl/win32/x86_64-2008plus-ssl?_ga=1.76096855.312951906.1466825504`，这里我下载了.zip的格式。
+MongoDB提供了.msi和.zip两种社区版下载，参见[Download MongoDB](https://www.mongodb.org/dl/win32/x86_64-2008plus-ssl?_ga=1.76096855.312951906.1466825504)，这里我下载了.zip的格式。
 ### 安装
 .zip形式直接解压到要安装的目录，如`D:\dev\mongodb`，目录结构为：
 ```
@@ -25,14 +25,16 @@ MongoDB提供了.msi和.zip两种社区版下载，参见`https://www.mongodb.or
 
 ```
 `bin/`下对应文件介绍：
+
 | Component Set                     | Binaries                                                              | 
-| --------------------------------- |:---------------------------------------------------------------------:|
+| --------------------------------- | --------------------------------------------------------------------- |
 | Server（服务）                    | mongod.exe                                                            |
 | Router（路由）                    | mongos.exe                                                            |
 | Client（客户端）                  | mongo.exe                                                             |
 | MonitoringTools（监控工具）       | mongostat.exe, mongotop.exe                                           |
 | ImportExportTools（导入导出工具） | mongodump.exe, mongorestore.exe, mongoexport.exe, mongoimport.exe     |
 | MiscellaneousTools（辅助工具）    | bsondump.exe, mongofiles.exe, mongooplog.exe, mongoperf.exe           |
+
 
 ## 启动
 
@@ -79,7 +81,7 @@ D:\dev\mongodb\data\db
 D:\dev\mongodb\data\log
 ```
 2、创建配置文件
-我们可以创建一个配置文件，该文件必须包含`systemLog.path`，其他可选配置参见：https://docs.mongodb.com/manual/reference/configuration-options/。如文件路径为：
+我们可以创建一个配置文件，该文件必须包含`systemLog.path`，其他可选配置参见：[configuration-options](https://docs.mongodb.com/manual/reference/configuration-options/)。如文件路径为：
 ```
 D:\dev\mongodb\mongod.cfg
 ```
@@ -93,6 +95,7 @@ storage:
 ```
 3、注册为服务
 > 以下命令需要以管理员身份打开cmd！
+
 命令：
 ```bash
 D:\dev\mongodb\bin>mongod.exe --config D:\dev\mongodb\mongod.cfg --install
