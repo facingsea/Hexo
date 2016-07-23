@@ -23,24 +23,24 @@ gyp verb "Release" dir needed to be created? null
 gyp verb copying "node.lib" for x64 C:\Users\wangzhf\.node-gyp\4.4.5\Release\node.lib
 gyp info spawn C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe
 gyp info spawn args [ 'build/binding.sln',
-gyp info spawn args   '/nologo',
-gyp info spawn args   '/p:Configuration=Release;Platform=x64' ]
+gyp info spawn args '/nologo',
+gyp info spawn args '/p:Configuration=Release;Platform=x64' ]
 ...
 gyp ERR! build error
-gyp ERR! stack Error: \`C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe\` failed with ex                                                                                                                 it code: 1
-gyp ERR! stack     at ChildProcess.onExit (E:\code\Hexo\node_modules\hexo-renderer-sass\no                                                                                                                 de_modules\node-sass\node_modules\node-gyp\lib\build.js:276:23)
+gyp ERR! stack Error: \`C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe\` failed with ex it code: 1
+gyp ERR! stack     at ChildProcess.onExit (E:\code\Hexo\node_modules\hexo-renderer-sass\node_modules\node-sass\node_modules\node-gyp\lib\build.js:276:23)
 gyp ERR! stack     at emitTwo (events.js:87:13)
 gyp ERR! stack     at ChildProcess.emit (events.js:172:7)
-gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:200:1                                                                                                                 2)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:200:12)
 gyp ERR! System Windows_NT 6.1.7600
-gyp ERR! command "D:\\dev\\nodejs\\node.exe" "E:\\code\\Hexo\\node_modules\\hexo-renderer-                                                                                                                 sass\\node_modules\\node-sass\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild" "--verb                                                                                                                 ose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
+gyp ERR! command "D:\\dev\\nodejs\\node.exe" "E:\\code\\Hexo\\node_modules\\hexo-renderer-sass\\node_modules\\node-sass\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild" "--verbose" "--libsass_ext=" "--libsass_cflags=" "--libsass_ldflags=" "--libsass_library="
 gyp ERR! cwd E:\code\Hexo\node_modules\hexo-renderer-sass\node_modules\node-sass
 gyp ERR! node -v v4.4.5
 gyp ERR! node-gyp -v v3.4.0
 gyp ERR! not ok
 Build failed
 npm ERR! Windows_NT 6.1.7600
-npm ERR! argv "D:\\dev\\nodejs\\node.exe" "D:\\dev\\nodejs\\node_modules\\npm\\bin\\npm-cl                                                                                                                 i.js" "install" "hexo-renderer-sass" "--save"
+npm ERR! argv "D:\\dev\\nodejs\\node.exe" "D:\\dev\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "hexo-renderer-sass" "--save"
 npm ERR! node v4.4.5
 npm ERR! npm  v2.15.5
 npm ERR! code ELIFECYCLE
